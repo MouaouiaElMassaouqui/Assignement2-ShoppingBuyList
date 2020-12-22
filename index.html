@@ -40,7 +40,7 @@
                 <h2>To Buy:</h2>
                 <ul>
                     <li ng-repeat="item in list1.items">Buy {{item.quantity}} {{item.name}}
-                        <button ng-click="list1.buyItem($index);" class="btn btn-default"><span class="glyphicon glyphicon-ok"></span>Bought</button>
+                        <button ng-click="list1.buyItem($index);" class="btn btn-outline-success"><span class="glyphicon glyphicon-ok"></span>Bought</button>
                     </li>
                 </ul>
                 <div ng-if="list1.items.length == 0" class="emptyMessage">Everything is bought!</div>
@@ -51,7 +51,7 @@
                 <h2>Already Bought:</h2>
                 <ul>
                     <li ng-repeat="item in list2.items"> You bought {{item.name}} of {{item.quantity}}
-                    <button ng-click="list2.canceled($index);" class="btn btn-default"><span class="glyphicon glyphicon-ok"></span>Cancel</button>
+                    <button ng-click="list2.canceled($index);" class="btn btn-outline-primary"><span class="glyphicon glyphicon-ok"></span>Cancel</button>
                     </li>
                 </ul>
                 <div ng-if="list2.items.length == 0" class="emptyMessage">Nothing bought yet.</div>
